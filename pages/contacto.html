@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordic Airlines - Viajes Nordicos Desde Argentina -</title>
+    <link rel="shortcut icon" href="../img/icon-circle.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">
+            <img src="../img/nav-logo.png" alt="Logo de Nordic Airlines" class="logo">
+        </a>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="planifique.html">Planifique su Viaje</a></li>
+            <li><a href="paquetes.html">Paquetes</a></li>
+        </ul>
+    </nav>
+    <!--ends nav-->
+
+    <header>
+        <img src="../img/header-nordico.jpg" alt="header" class="img-header">
+    </header>
+
+
+
+    <main class="contactForm">
+        <h1>Contacto</h1>
+        <section class="formleft__caja">
+            <form action="envio.php" class="formContacto">
+                <div class="form-control">
+                    <p><label for="name">Nombre y Apellido</label> </p>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-control">
+                    <p><label for="correo">Email</label> </p>
+                    <input type="email" id="correo">
+                </div>
+                <fieldset>
+                    <legend>Info de paquetes</legend>
+                    <label for="x2-pasaje Noruega">2 Pasajeros - Noruega</label>
+                    <input type="checkbox" id="x2pasajeNoruega">
+                    <br>
+                    <label for="x2-pasaje Dinamarca">2 Pasajeros - Dinamarca</label>
+                    <input type="checkbox" id="x2pasajeDinamarca">
+                    <br>
+                    <label for="x2-pasaje Islandia">2 Pasajeros - Islandia</label>
+                    <input type="checkbox" id="x2pasajeIslandia">
+                    <br>
+                    <label for="x2-pasaje Finlandia">2 Pasajeros - Finlandia</label>
+                    <input type="checkbox" id="x2pasajeFinlandia">
+                    <br>
+                    <label for="x2-pasaje Suecia">2 Pasajeros - Suecia</label>
+                    <input type="checkbox" id="x2pasajeSuecia">
+                </fieldset>
+                <fieldset>
+                    <legend>Info de personas</legend>
+                    <label for="x1-pasaje">1 Pasajeros</label>
+                    <input type="radio" id="x1Pasaje" name="cantidad">
+                    <br>
+                    <label for="x2-pasaje">2 Pasajeros</label>
+                    <input type="radio" id="x2Pasaje" name="cantidad">
+                    <br>
+                    <label for="x3-pasaje">3 Pasajeros</label>
+                    <input type="radio" id="x3Pasaje" name="cantidad">
+                    <br>
+                    <label for="paquete-familiar">Paquete Familiar</label>
+                    <input type="radio" id="paqueteFamiliar" name="cantidad">
+                </fieldset>
+                <fieldset>
+                    <label for="info-tours">¿Que destino te interesa?</label>
+                    <select name="" id="" class="option-box">
+                        <option value="NO">Noruega</option>
+                        <option value="DK">Dinamarca</option>
+                        <option value="IS">Islandia</option>
+                        <option value="FI">Finlandia</option>
+                        <option value="SE">Suecia</option>
+                    </select>
+                </fieldset>
+                <label for="comentario">Dejanos tu mensaje</label>
+                <br>
+                <textarea name="" id="" cols="100" rows="13"></textarea>
+                <br>
+                <input type="submit" value="Enviar" class="btn">
+                <input type="reset" value="Cancelar" class="btn">
+
+            </form>
+            <!--Ends Form-->
+        </section>
+    </main>
+
+    <div class="footerContent" id="footerEnd">
+        <footer>
+            <div class="newsLetter">
+                <h1>Suscribite</h1>
+                <p>Ingresa tu email para recibir descuentos y noticias</p>
+                <form action="" class="form-footer">
+                    <input type="text" placeholder="E-mail" id="inputFooter">
+                    <button class="btnFooter">Suscribite</button>
+                </form>
+            </div>
+            <hr>
+            <div class="mainFooter">
+                <div class="column-1">
+                    <h2>Nordic Airlines</h2>
+                    <p>Copyright &copy; 2022</p>
+                    <p>Creado por Elias Uriel Garcia</p>
+                </div>
+                <div>
+                    <h2>Product</h2>
+                    <ul>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <h2>Compañía</h2>
+                    <ul>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">Vuelos</a></li>
+                        <li><a href="">Trabajemos juntos</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="ayuda">
+                    <h2>Ayuda</h2>
+                    <ul>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="redes-f">
+                    <h2>Redes</h2>
+                    <ul>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href=""> Instagram</a></li>
+                        <li><a href=""> Facebook</a></li>
+                        <li><a href=""> Google</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--Ends Footer-->
+</body>
+
+</html>

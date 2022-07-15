@@ -1,0 +1,14 @@
+Dekstop index: https://wireframe.cc/UnzWT7
+Mobile index: https://wireframe.cc/FQMhcU
+
+Dekstop "Paquetes": https://wireframe.cc/2sHilU
+Mobile "Paquetes": https://wireframe.cc/N32wq8
+
+Dekstop "Contacto": https://wireframe.cc/ny1EI7
+Mobile "Contacto": https://wireframe.cc/gjuJ6P
+
+Dekstop "Nuestra Mision": https://wireframe.cc/DlACuM
+Mobile "Nuestra Mision": https://wireframe.cc/Uay8Vk
+
+Dekstop "Alojamientos": https://wireframe.cc/clWqvX
+Mobile "Alojamientos": https://wireframe.cc/tfeWId
