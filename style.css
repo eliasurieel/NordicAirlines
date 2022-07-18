@@ -9,6 +9,7 @@
 }
 
 
+
 main h1 {
     text-align: center;
     background-color: #6F9ABF;
@@ -17,10 +18,13 @@ main h1 {
 
 }
 
+
 .img-header {
     padding-top: 10px;
     width: 100%;
     height: auto;
+    animation-name: textAlpha;
+    animation-duration: 4s;
 
 }
 
@@ -62,6 +66,13 @@ main h1 {
     cursor: pointer;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 nav ul {
     display: inline-block;
 }
@@ -69,18 +80,24 @@ nav ul {
 nav ul li {
     list-style: none;
     display: inline-block;
+    margin: 10px 20px;
+    animation-name: btnAlpha;
+    animation-duration: 0.6s;
+    
+    
 }
 
 nav ul li a {
     text-decoration: none;
     padding-left: 35px;
-    color: rgb(0, 0, 0);
     text-transform: uppercase;
-
+    color: black;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     color: #6F9ABF;
+    
 }
 
 header img {
@@ -155,7 +172,10 @@ textarea{
     flex-direction: column;
     overflow: hidden;
     box-shadow: -1px 13px 34px 0px rgba(0,0,0,0.15);
-    
+    transition: 0.4s ease-in-out;   
+}
+.cardContainer:hover{
+    transform: scale(1.05);
 }
 
 .imageContainer{
@@ -245,6 +265,9 @@ textarea{
     grid-template-columns: repeat(3,1fr);
     column-gap: 2rem;
     padding: 30px 30px;
+    
+    animation-name: textAlpha;
+    animation-duration: 4s;
        
 }
 
@@ -305,6 +328,9 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+
+    animation-name: textAlpha;
+    animation-duration: 4s;
 }
 
 #inputFooter{
@@ -325,6 +351,10 @@ footer{
     border-radius: 14px;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
+}
+.btnFooter:hover{
+    background-color: #5b7a96;
 }
 
 
@@ -356,7 +386,10 @@ footer{
 .mainFooter{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    padding: 2rem;   
+    padding: 2rem;
+    
+    animation-name: textAlpha;
+    animation-duration: 4s;
 }
 i{
     margin-right: 20px;
@@ -369,6 +402,15 @@ footer{
 
 .form-footer input::placeholder{
     color: white;
+}
+
+@keyframes textAlpha{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes btnAlpha{
+    from{transform: translateY(-20px);}
+    to{transform: translateY(0px);}
 }
 
 
