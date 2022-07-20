@@ -36,7 +36,7 @@
                     <a href="./nosotros.html" class="nav-link">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/contacto.html" class="nav-link">Contacto</a>
+                    <a href="./contacto.html" class="nav-link">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -92,130 +92,180 @@
 
     <!--ends header carousel-->
 
+    <!--videos ustedes-->
 
-    <!--form-->
-    <main class="contactForm">
-            <h1>Contacto</h1>
-        <section class="formleft__caja">
-            <form action="envio.php" class="formContacto">
-                <div class="form-control">
-                    <p><label for="name">Nombre y Apellido</label> </p>
-                    <input type="text" id="name">
+    <!-- Modal gallery -->
+
+    <div class="container">
+        <h3 class="mb-4 text-center pt-4">Ustedes</h3>
+        <section class="py-5">
+            <!-- Section: Images -->
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/screens/yt/screen-video-1.webp" class="w-100" />
+                            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/screens/yt/screen-video-2.webp" class="w-100" />
+                            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/screens/yt/screen-video-3.webp" class="w-100" />
+                            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-control">
-                    <p><label for="correo">Email</label> </p>
-                    <input type="email" id="correo">
+            </section>
+            <!-- Section: Images -->
+
+            <!-- Section: Modals -->
+            <section class="">
+                <!-- Modal 1 -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/A3PDXmYoF5U" title="YouTube video"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                            <div class="text-center py-3">
+                                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <fieldset>
-                    <legend>Info de paquetes</legend>
-                    <label for="x2-pasaje Noruega">2 Pasajeros - Noruega</label>
-                    <input type="checkbox" id="x2pasajeNoruega">
-                    <br>
-                    <label for="x2-pasaje Dinamarca">2 Pasajeros - Dinamarca</label>
-                    <input type="checkbox" id="x2pasajeDinamarca">
-                    <br>
-                    <label for="x2-pasaje Islandia">2 Pasajeros - Islandia</label>
-                    <input type="checkbox" id="x2pasajeIslandia">
-                    <br>
-                    <label for="x2-pasaje Finlandia">2 Pasajeros - Finlandia</label>
-                    <input type="checkbox" id="x2pasajeFinlandia">
-                    <br>
-                    <label for="x2-pasaje Suecia">2 Pasajeros - Suecia</label>
-                    <input type="checkbox" id="x2pasajeSuecia">
-                </fieldset>
-                <fieldset>
-                    <legend>Info de personas</legend>
-                    <label for="x1-pasaje">1 Pasajeros</label>
-                    <input type="radio" id="x1Pasaje" name="cantidad">
-                    <br>
-                    <label for="x2-pasaje">2 Pasajeros</label>
-                    <input type="radio" id="x2Pasaje" name="cantidad">
-                    <br>
-                    <label for="x3-pasaje">3 Pasajeros</label>
-                    <input type="radio" id="x3Pasaje" name="cantidad">
-                    <br>
-                    <label for="paquete-familiar">Paquete Familiar</label>
-                    <input type="radio" id="paqueteFamiliar" name="cantidad">
-                </fieldset>
-                <fieldset>
-                    <label for="info-tours">¿Que destino te interesa?</label>
-                    <select name="" id="" class="option-box">
-                        <option value="NO">Noruega</option>
-                        <option value="DK">Dinamarca</option>
-                        <option value="IS">Islandia</option>
-                        <option value="FI">Finlandia</option>
-                        <option value="SE">Suecia</option>
-                    </select>
-                </fieldset>
-                <label for="comentario">Dejanos tu mensaje</label>
-                <br>
-                <textarea name="" id="" cols="100" rows="13"></textarea>
-                <br>
-                <input type="submit" value="Enviar" class="btn">
-                <input type="reset" value="Cancelar" class="btn">
+                <!-- Modal 2 -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/wTcNtgA6gHs" title="YouTube video"
+                                    allowfullscreen></iframe>
+                            </div>
 
-            </form>
+                            <div class="text-center py-3">
+                                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal 3 -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video"
+                                    allowfullscreen></iframe>
+                            </div>
 
+                            <div class="text-center py-3">
+                                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Modals -->
         </section>
-        <!--Ends Form-->
-    </main>
+    </div>
+    <!-- Modal gallery -->
 
-    <!--Preguntas Accordion-->
-    <section id="questions">
-        <div class="container py-5">
-            <h2 class="text-center mb-4">
-                Preguntas Frecuentes
-            </h2>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            ¿Lorem ipsum dolor sit amet?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                            body.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            ¿Lorem ipsum dolor sit amet?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            ¿Lorem ipsum dolor sit amet?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                            body. Nothing more exciting happening here in terms of content, but just filling up the
-                            space to make it look, at least at first glance, a bit more representative of how this would
-                            look in a real-world application.</div>
-                    </div>
+    <!--termina videos ustedes-->
+
+
+    <!--testimony section-->
+    <div class="container py-4">
+        <section>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 col-xl-8 text-center">
+                    <h3 class="mb-4">Testimonios</h3>
+                    <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                        numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+                        quisquam eum porro a pariatur veniam.
+                    </p>
                 </div>
             </div>
 
-        </div>
-    </section>
+            <div class="row text-center d-flex align-items-stretch">
+                <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+                    <div class="card testimonial-card">
+                        <div class="card-up" style="background-color: #9d789b;"></div>
+                        <div class="avatar mx-auto bg-white">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                                class="rounded-circle img-fluid" />
+                        </div>
+                        <div class="card-body">
+                            <h4 class="mb-4">Maria Smantha</h4>
+                            <hr />
+                            <p class="dark-grey-text mt-4">
+                                <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet eos adipisci,
+                                consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+                    <div class="card testimonial-card">
+                        <div class="card-up" style="background-color: #7a81a8;"></div>
+                        <div class="avatar mx-auto bg-white">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                class="rounded-circle img-fluid" />
+                        </div>
+                        <div class="card-body">
+                            <h4 class="mb-4">Lisa Cudrow</h4>
+                            <hr />
+                            <p class="dark-grey-text mt-4">
+                                <i class="fas fa-quote-left pe-2"></i>Neque cupiditate assumenda in maiores
+                                repudi mollitia architecto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-0 d-flex align-items-stretch">
+                    <div class="card testimonial-card">
+                        <div class="card-up" style="background-color: #6d5b98;"></div>
+                        <div class="avatar mx-auto bg-white">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                                class="rounded-circle img-fluid" />
+                        </div>
+                        <div class="card-body">
+                            <h4 class="mb-4">John Smith</h4>
+                            <hr />
+                            <p class="dark-grey-text mt-4">
+                                <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                                aliquam repellat rem unde ducimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!--footer-->
     <div class="container pt-2">

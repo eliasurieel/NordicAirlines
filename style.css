@@ -2,17 +2,14 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    background-color: #FAFAFA;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 
-
 main h1 {
     text-align: center;
-    background-color: #6F9ABF;
     padding: 25px 0;
     width: 100%;
 
@@ -27,6 +24,14 @@ main h1 {
     animation-duration: 4s;
 
 }
+
+
+.heightImage{
+    max-height: calc(100vh - 84px);
+    
+}
+
+
 
 .option-box {
     width: auto;
@@ -66,6 +71,21 @@ main h1 {
     cursor: pointer;
 }
 
+nav ul li a{
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    animation-name: btnAlpha;
+    animation-duration: 0.6s;
+    
+    
+}
+
+ /* START NAV LOCAL
 nav{
     display: flex;
     align-items: center;
@@ -87,6 +107,7 @@ nav ul li {
     
 }
 
+
 nav ul li a {
     text-decoration: none;
     padding-left: 35px;
@@ -98,7 +119,8 @@ nav ul li a {
 nav ul li a:hover {
     color: #6F9ABF;
     
-}
+} 
+  END NAV LOCAL*/
 
 header img {
     height: 800px;
@@ -150,7 +172,7 @@ textarea{
     margin:1rem 0;
 }
 
-.btn{
+/* .btn{
     width: 20%;
     height: 30px;
     border-radius: 4px;
@@ -163,7 +185,7 @@ textarea{
 
 .btn:hover{
     background-color: #B0C1D9;
-}
+} */
 
 .cardContainer{
     width: 300px;
@@ -204,6 +226,7 @@ textarea{
     border-top: 1px solid rgb(233, 233, 233);
 }
 
+/* 
 .container{
     width: 100%;
     height: 100%;
@@ -211,6 +234,7 @@ textarea{
     justify-content: center;
     align-items: center;
 }
+*/
 
 .btn-1{
     width: 100%;
@@ -317,12 +341,7 @@ textarea{
     color: black;
 }
 
-footer{
-    background-color: #374c5f;
-    color: black;
-    width: 80%;
-    margin: auto;
-}
+
 
 .newsLetter{
     display: flex;
@@ -358,22 +377,12 @@ footer{
 }
 
 
-.footerContent p{
-    opacity: 0.6;
-    margin-top: 10px;
-}
+
 .footerContent hr{
     opacity: 0.3;
 }
-.footerContent a{
-    color: black;
-    text-decoration: none;
-    opacity: 0.6;
-}
-.footerContent a:hover{
-    opacity: 1;
-    text-decoration: underline;
-}
+
+
 .footerContent h2{
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -395,9 +404,13 @@ i{
     margin-right: 20px;
 }
 
-footer{
-    padding-top: 30px;
+.andara{
+    object-fit: cover;
+    animation-name: textAlpha;
+    animation-duration: 4s;
+    
 }
+
 
 
 .form-footer input::placeholder{
@@ -460,5 +473,10 @@ footer{
     .btn{
         width: 100%;
         margin-bottom: 1rem;
+    }
+
+    .heightImage{
+        height: 30vh;
+        
     }
 }
