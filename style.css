@@ -412,6 +412,19 @@ i{
     
 }
 
+.boton{
+    border-color: black;
+    border-radius: 1rem;
+    text-align: center;
+}
+.col-md a{
+    text-align: center;
+}
+
+.imageU{
+    border-radius: 6px;
+}
+
 
 
 .form-footer input::placeholder{
@@ -480,4 +493,27 @@ i{
         height: 30vh;
         
     }
+}
+
+@media only screen  and (max-width:766px){
+    .display-1{
+        text-align: center;
+    }
+
+    .us h2{
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .col-md h2{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .lead{
+        text-align: center;
+    }
+    .lead2{
+        text-align: center;
+    }
+
 }
