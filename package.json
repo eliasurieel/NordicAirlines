@@ -1,0 +1,24 @@
+{
+  "name": "clase13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss sassGuia/sassGuia.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasurieel/NordicAirlines.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliasurieel/NordicAirlines/issues"
+  },
+  "homepage": "https://github.com/eliasurieel/NordicAirlines#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}
