@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+.container .cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  padding: 30px 30px;
+  animation-name: textAlpha;
+  animation-duration: 4s;
+}
+.container .cardsContainer .cardContainer {
+  width: 300px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: -1px 13px 34px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.4s ease-in-out;
+}
+.container .cardsContainer .cardContainer:hover {
+  transform: scale(1.05);
+}
+.container .cardsContainer .cardContainer .imageContainer2 {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/noruegaBg.jpg);
+  background-size: cover;
+}
+.container .cardsContainer .cardContainer .location {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+}
+.container .cardsContainer .cardContainer .location .icon {
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .cardsContainer .cardContainer .location .icon .iconPlane {
+  width: 30px;
+}
+.container .cardsContainer .cardContainer .location .destino {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.container .cardsContainer .cardContainer .cta {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-top: 1px solid #fff;
+}
+.container .cardsContainer .cardContainer .cta .btn-1 {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background-color: #6F9ABF;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container .cardsContainer .cardContainer .cta .btn-1:hover {
+  background-color: #5b7a96;
+}
+.container .cardsContainer .cardContainer .imageContainer {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/islandia.jpg);
+  background-size: cover;
+}
+.container .cardsContainer .priceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-top: 1px solid #fff;
+}
+.container .cardsContainer .priceContainer .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .cardsContainer .priceContainer .price .price p {
+  font-size: 26px;
+  font-weight: 800;
+  color: #6F9ABF;
+}
+.container .cardsContainer .priceContainer .price .price span {
+  font-size: 12px;
+  color: gray;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+  animation-name: btnAlpha;
+  animation-duration: 0.6;
+}
+nav ul li a {
+  text-align: center;
+}
+
+/*# sourceMappingURL=sassGuia.css.map */
