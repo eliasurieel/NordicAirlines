@@ -56,7 +56,7 @@
   padding: 12px;
   border-top: 1px solid #fff;
 }
-.container .cardsContainer .cardContainer .cta .btn-1 {
+.container .cardsContainer .cardContainer .cta .btn-1, .container .cardsContainer .cardContainer .cta .boton, .container .cardsContainer .cardContainer .cta .btn-square {
   width: 100%;
   padding: 14px;
   border-radius: 10px;
@@ -66,7 +66,7 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-.container .cardsContainer .cardContainer .cta .btn-1:hover {
+.container .cardsContainer .cardContainer .cta .btn-1:hover, .container .cardsContainer .cardContainer .cta .boton:hover, .container .cardsContainer .cardContainer .cta .btn-square:hover {
   background-color: #5b7a96;
 }
 .container .cardsContainer .cardContainer .imageContainer {
@@ -106,6 +106,37 @@ nav ul li {
 }
 nav ul li a {
   text-align: center;
+}
+
+.btn-1, .boton, .btn-square {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background-color: #6F9ABF;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-1:hover, .boton:hover, .btn-square:hover {
+  background-color: #5b7a96;
+}
+
+.btn-square {
+  border-radius: none;
+}
+
+.ejemploDflex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-ends;
+}
+
+.boton {
+  border-radius: none;
+}
+.boton:hover {
+  background-color: #5b7a96;
 }
 
 /*# sourceMappingURL=sassGuia.css.map */

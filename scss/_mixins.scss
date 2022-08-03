@@ -1,0 +1,50 @@
+//extend
+
+.btn-1{
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background-color: #6F9ABF;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+        &:hover{
+            background-color: #5b7a96;
+        }
+}
+
+.btn-square{
+    @extend .btn-1;
+    border-radius: none;
+}
+
+
+//mixing
+
+@mixin d-flex($justify,$aling){
+    display: flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+.ejemploDflex{
+    @include d-flex(center, flex-ends)
+}
+
+//maps
+
+$paleta:(
+    'uno': #6F9ABF,
+    'dos': #5b7a96,
+    'tres': #B0C1D9,
+    'cuatro': #374c5f,
+);
+
+.boton{
+    @extend .btn-1;
+    border-radius: none;
+    &:hover{
+        background-color: map-get($map: $paleta, $key:'dos');
+    }
+}
