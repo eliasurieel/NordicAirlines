@@ -138,7 +138,11 @@ header img {
     cursor: pointer;
 } */
 
-
+.containerNosotros h1{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
 
 .formleft__caja{
     width: 60%;
