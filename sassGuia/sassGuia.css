@@ -107,6 +107,7 @@ header img {
 .containerNosotros h1 {
   text-align: center;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 .formleft__caja {
@@ -187,6 +188,13 @@ textarea {
   border-top: 1px solid rgb(233, 233, 233);
 }
 
+.ustedes h1 {
+  text-align: center;
+  padding: 25px 0;
+  width: 100%;
+  font-weight: 300;
+}
+
 .btn-1, .btn-square, .boton {
   width: 100%;
   padding: 14px;
@@ -224,21 +232,21 @@ textarea {
 }
 
 .cardsContainer {
-  display: flex;
   gap: 2rem;
   padding: 30px 30px;
-  align-items: center;
-  justify-content: center;
   animation-name: textAlpha;
   animation-duration: 4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .priceContainer {
+  height: 80px;
+  border-top: 1px solid rgb(233, 233, 233);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  border-top: 1px solid rgb(233, 233, 233);
 }
 
 .price {
@@ -367,7 +375,7 @@ i {
 }
 
 .form-footer input::placeholder {
-  color: white;
+  color: #fff;
 }
 
 @keyframes textAlpha {
@@ -418,7 +426,12 @@ i {
   .mainColumn p {
     text-align: center;
   }
-  .mainButton {
+  .botonHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .botonHeader .mainButton {
     display: flex;
     justify-content: center;
     padding: 5px;

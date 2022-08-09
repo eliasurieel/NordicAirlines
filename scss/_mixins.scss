@@ -22,10 +22,10 @@
 
 //mixing
 
-@mixin d-flex($justify,$aling){
+@mixin d-flex($justify, $align){
     display: flex;
     justify-content: $justify;
-    align-items: $aling;
+    align-items: $align;
 }
 
 .ejemploDflex{

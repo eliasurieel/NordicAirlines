@@ -10,12 +10,12 @@
 main h1 {
   text-align: center;
   padding: 25px 0;
-  width: 100%;
+  width: $w-100;
 }
 
 .img-header {
   padding-top: 10px;
-  width: 100%;
+  width: $w-100;
   height: auto;
   animation-name: textAlpha;
   animation-duration: 4s;
@@ -36,9 +36,7 @@ main h1 {
 }
 
 .contactForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include d-flex(center, center);
   flex-direction: column;
 }
 
@@ -71,12 +69,13 @@ nav ul li {
 
 header img {
   height: 800px;
-  width: 100%;
+  width: $w-100;
 }
 
 .containerNosotros h1 {
   text-align: center;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 .formleft__caja {
@@ -90,8 +89,8 @@ header img {
 
 input {
   &[type=text], &[type=email] {
-    width: 100%;
-    background-color: #B0C1D9;
+    width: $w-100;
+    background-color: $bgColorSecondary;
     height: 32px;
     border-radius: 5px;
     border: 1px solid rgb(216, 216, 216);
@@ -99,8 +98,8 @@ input {
 }
 
 select {
-  width: 100%;
-  background-color: #B0C1D9;
+  width: $w-100;
+  background-color: $bgColorSecondary;
   height: 32px;
   border-radius: 5px;
   border: 1px solid rgb(216, 216, 216);
@@ -114,8 +113,8 @@ fieldset {
 }
 
 textarea {
-  width: 100%;
-  background-color: #B0C1D9;
+  width: $w-100;
+  background-color: $bgColorSecondary;
   border-radius: 5px;
   border: 1px solid rgb(216, 216, 216);
   margin: 1rem 0;
@@ -136,14 +135,14 @@ textarea {
 }
 
 .imageContainer {
-  width: 100%;
+  width: $w-100;
   height: 200px;
   background-image: url(../img/islandia.jpg);
   background-size: cover;
 }
 
 .location {
-  width: 100%;
+  width: $w-100;
   display: flex;
   justify-content: space-between;
   padding: 12px;
@@ -151,7 +150,7 @@ textarea {
 }
 
 .cta {
-  width: 100%;
+  width: $w-100;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -160,23 +159,32 @@ textarea {
   border-top: 1px solid rgb(233, 233, 233);
 }
 
+.ustedes{
+  h1{
+    text-align: center;
+    padding: 25px 0;
+    width: $w-100;
+    font-weight: 300;
+  }
+}
+
 .btn-1 {
-  width: 100%;
+  width: $w-100;
   padding: 14px;
   border-radius: 10px;
   border: none;
-  background-color: #6F9ABF;
-  color: #fff;
+  background-color: $mainColor;
+  color: $white;
   text-transform: uppercase;
   cursor: pointer;
 
   &:hover {
-    background-color: #5b7a96;
+    background-color: $secondaryColor;
   }
 }
 
 .img-1 {
-  width: 100%;
+  width: $w-100;
   height: auto;
 }
 
@@ -198,21 +206,21 @@ textarea {
 }
 
 .cardsContainer {
-  display: flex;
   gap: 2rem;
   padding: 30px 30px;
-  align-items: center;
-  justify-content: center;
   animation-name: textAlpha;
   animation-duration: 4s;
+  @include d-flex(center, center);
 }
 
 .priceContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   height: 80px;
   border-top: 1px solid rgb(233, 233, 233);
+  @include d-flex(center, center);
+  
 }
 
 .price {
@@ -223,7 +231,7 @@ textarea {
   p {
     font-size: 26px;
     font-weight: 800;
-    color: #6F9ABF;
+    color: $mainColor;
   }
 
   span {
@@ -233,14 +241,14 @@ textarea {
 }
 
 .imageContainer3 {
-  width: 100%;
+  width: $w-100;
   height: 200px;
   background-image: url(../img/dinamarcaBg.jpg);
   background-size: cover;
 }
 
 .imageContainer2 {
-  width: 100%;
+  width: $w-100;
   height: 200px;
   background-image: url(../img/noruegaBg.jpg);
   background-size: cover;
@@ -248,7 +256,7 @@ textarea {
 
 .footerContent {
   height: auto;
-  background-color: #374c5f;
+  background-color: $darkBlue;
   color: black;
 }
 
@@ -262,16 +270,16 @@ textarea {
 
 #inputFooter {
   padding: 8px 10px;
-  background-color: #374c5f;
+  background-color: $darkBlue;
   border: 1px solid #ccc;
   width: 50%;
   outline: none;
-  color: #fff;
+  color: $white;
 }
 
 .btnFooter {
-  color: #fff;
-  background-color: #6F9ABF;
+  color: $white;
+  background-color: $mainColor;
   outline: none;
   border: none;
   padding: 9px 25px;
@@ -281,7 +289,7 @@ textarea {
   cursor: pointer;
 
   &:hover {
-    background-color: #5b7a96;
+    background-color: $secondaryColor;
   }
 }
 
@@ -335,12 +343,12 @@ i {
 }
 
 .mainButton {
-  background-color: #374c5f;
-  border: #fff;
+  background-color: $darkBlue;
+  border: $white;
   width: 120px;
   height: 35px;
   border-radius: 4px;
-  color: #fff;
+  color: $white;
 
   &:hover {
     background-color: #FEAB83;
@@ -349,7 +357,7 @@ i {
 }
 
 .form-footer input::placeholder {
-  color: white;
+  color: $white;
 }
 
 @keyframes textAlpha {
@@ -397,11 +405,11 @@ i {
   }
 
   .formContacto, .formleft__caja {
-    width: 100%;
+    width: $w-100;
   }
 
   .btn {
-    width: 100%;
+    width: $w-100;
     margin-bottom: 1rem;
   }
 
@@ -413,12 +421,17 @@ i {
     text-align: center;
   }
 
+  .botonHeader{
+      display: flex;
+      align-items: center;
+      justify-content: center;
   .mainButton {
     display: flex;
     justify-content: center;
     padding: 5px;
     margin-left: 100px;
   }
+  } 
 
   .display-1 {
     text-align: center;
@@ -432,4 +445,6 @@ i {
   .lead, .lead2 {
     text-align: center;
   }
+  
+  
 }
