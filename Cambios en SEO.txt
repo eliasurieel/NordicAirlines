@@ -1,0 +1,5 @@
+Cambios en SEO:
+
+-En cuanto a seo, agregue los siguientes meta: meta name keywords, y meta name description, estas ultimas varian en todos los html. 
+-Agregue un solo "h1" en el index.
+-Todos los "Alt" fueron agregados en sus respectivos lugares.
