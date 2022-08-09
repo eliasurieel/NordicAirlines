@@ -232,13 +232,13 @@ textarea {
 }
 
 .cardsContainer {
-  display: flex;
   gap: 2rem;
   padding: 30px 30px;
-  align-items: center;
-  justify-content: center;
   animation-name: textAlpha;
   animation-duration: 4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .priceContainer {
