@@ -72,10 +72,23 @@ header img {
   width: $w-100;
 }
 
-.containerNosotros h1 {
+.containerNosotros{
+  h1{
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
+    }
+  .mainSection {
+    .aboutUs{
+      padding: 20px !important;
+      .lead{
+        a{
+          text-decoration: none;
+        }
+        
+      }
+    }
+  }
 }
 
 .formleft__caja {
@@ -87,38 +100,7 @@ header img {
   margin-bottom: 10px;
 }
 
-input {
-  &[type=text], &[type=email] {
-    width: $w-100;
-    background-color: $bgColorSecondary;
-    height: 32px;
-    border-radius: 5px;
-    border: 1px solid rgb(216, 216, 216);
-  }
-}
 
-select {
-  width: $w-100;
-  background-color: $bgColorSecondary;
-  height: 32px;
-  border-radius: 5px;
-  border: 1px solid rgb(216, 216, 216);
-}
-
-fieldset {
-  border-radius: 5px;
-  border: 1px solid rgb(216, 216, 216);
-  padding: 15px;
-  margin-bottom: 10px;
-}
-
-textarea {
-  width: $w-100;
-  background-color: $bgColorSecondary;
-  border-radius: 5px;
-  border: 1px solid rgb(216, 216, 216);
-  margin: 1rem 0;
-}
 
 .cardContainer {
   width: 300px;
@@ -159,8 +141,8 @@ textarea {
   border-top: 1px solid rgb(233, 233, 233);
 }
 
-.ustedes{
-  h1{
+.ustedes {
+  h1 {
     text-align: center;
     padding: 25px 0;
     width: $w-100;
@@ -220,7 +202,7 @@ textarea {
   height: 80px;
   border-top: 1px solid rgb(233, 233, 233);
   @include d-flex(center, center);
-  
+
 }
 
 .price {
@@ -360,6 +342,174 @@ i {
   color: $white;
 }
 
+.bf-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px 20px;
+
+  h1 {
+    font-size: 40px;
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    background-color: $secondaryColor;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: 'Baloo 2', cursive;
+    margin-top: 5px;
+    resize: none;
+    color: #fff;
+    border-radius: 10px;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .bf-body-box {
+    padding: 20px;
+  }
+
+  .bf-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+
+  .bf-col-12 {
+    width: 100%;
+  }
+
+  .bf-col-3 {
+    width: 30%;
+  }
+
+  .bf-col-6 {
+    width: 48%;
+  }
+
+  .bf-head {
+    text-align: center;
+  }
+
+  .bf-head,
+  .bf-footer {
+    background-color: $mainColor;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bf-head p {
+    color: $white;
+  }
+
+  .bf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 20px 16px;
+    background-color: #1d2228;
+  }
+
+  .bf-body {
+    width: 500px;
+    background-color: $bgColorSecondary;
+  }
+
+}
+
+/*
+h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+p{
+    color: #fff;
+}
+
+input, textarea, select{
+    width: 100%;
+    background-color: #141824;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: 'Baloo 2', cursive;
+    margin-top: 5px;
+    resize: none;
+    color: #fff;
+    border-radius: 10px;
+}
+.bf-body-box{
+    padding: 20px;
+}
+.bf-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.bf-col-12{
+    width: 100%;
+}
+
+.bf-col-3{
+    width: 30%;
+}
+
+.bf-col-6{
+    width: 48%;
+}
+
+.bf-head{
+    text-align: center;
+}
+
+.bf-head, .bf-footer{
+    background-color: #141824;
+    padding: 20px 10px;
+}
+.bf-head p{
+    color: #115035;
+}
+.bf-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 20px 16px;
+    background-color: #1d2228;
+}
+
+.bf-body{
+    width: 500px;
+    background-color: #1d1d2c;
+}
+
+*/
+
+
+
+
+
+
 @keyframes textAlpha {
   from {
     opacity: 0;
@@ -404,7 +554,8 @@ i {
     }
   }
 
-  .formContacto, .formleft__caja {
+  .formContacto,
+  .formleft__caja {
     width: $w-100;
   }
 
@@ -421,30 +572,101 @@ i {
     text-align: center;
   }
 
-  .botonHeader{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  .mainButton {
+  .botonHeader {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 5px;
-    margin-left: 100px;
+    padding-right: 100px;
+
+    .mainButton {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      margin-left: 100px;
+    }
   }
-  } 
 
   .display-1 {
     text-align: center;
   }
 
-  .us h2, .col-md h2 {
+  .us h2,
+  .col-md h2 {
     text-align: center;
     padding: 10px 0;
   }
 
-  .lead, .lead2 {
+  .lead{
+    text-decoration: none;
+  }
+  .lead2 {
     text-align: center;
   }
+
+  .p-5 {
+    .containerNosotros {
+      .mainSection {
+        .aboutUs {
+          .text2 {
+            text-align: center;
+          }
+          .lead{
+            a{
+              text-decoration: none;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .leftFooter {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .bottomColFooter{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+  }
+
+  .bf-row {
+    flex-direction: column;
+    padding: 0;
+    .bf-col-3 {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .bf-col-12 {
+    padding: 10px 0;
+    width: 100%;
+  }
+
   
-  
+
+  .bf-col-6 {
+    padding: 10px 0;
+  }
+
+  .bf-container {
+    padding: 50px 16px;
+    .bf-col-6{
+      width: 100%;
+    }
+
+  }
 }

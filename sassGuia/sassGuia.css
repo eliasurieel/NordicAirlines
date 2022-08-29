@@ -109,6 +109,12 @@ header img {
   text-transform: uppercase;
   font-weight: 300;
 }
+.containerNosotros .mainSection .aboutUs {
+  padding: 20px !important;
+}
+.containerNosotros .mainSection .aboutUs .lead a {
+  text-decoration: none;
+}
 
 .formleft__caja {
   width: 60%;
@@ -117,37 +123,6 @@ header img {
 
 .form-control {
   margin-bottom: 10px;
-}
-
-input[type=text], input[type=email] {
-  width: 100%;
-  background-color: #B0C1D9;
-  height: 32px;
-  border-radius: 5px;
-  border: 1px solid rgb(216, 216, 216);
-}
-
-select {
-  width: 100%;
-  background-color: #B0C1D9;
-  height: 32px;
-  border-radius: 5px;
-  border: 1px solid rgb(216, 216, 216);
-}
-
-fieldset {
-  border-radius: 5px;
-  border: 1px solid rgb(216, 216, 216);
-  padding: 15px;
-  margin-bottom: 10px;
-}
-
-textarea {
-  width: 100%;
-  background-color: #B0C1D9;
-  border-radius: 5px;
-  border: 1px solid rgb(216, 216, 216);
-  margin: 1rem 0;
 }
 
 .cardContainer {
@@ -378,6 +353,155 @@ i {
   color: #fff;
 }
 
+.bf-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+.bf-container h1 {
+  font-size: 40px;
+  color: #fff;
+}
+.bf-container p {
+  color: #fff;
+}
+.bf-container input,
+.bf-container textarea,
+.bf-container select {
+  width: 100%;
+  background-color: #5b7a96;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-family: "Baloo 2", cursive;
+  margin-top: 5px;
+  resize: none;
+  color: #fff;
+  border-radius: 10px;
+}
+.bf-container input::placeholder,
+.bf-container textarea::placeholder,
+.bf-container select::placeholder {
+  color: #fff;
+}
+.bf-container .bf-body-box {
+  padding: 20px;
+}
+.bf-container .bf-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.bf-container .bf-col-12 {
+  width: 100%;
+}
+.bf-container .bf-col-3 {
+  width: 30%;
+}
+.bf-container .bf-col-6 {
+  width: 48%;
+}
+.bf-container .bf-head {
+  text-align: center;
+}
+.bf-container .bf-head,
+.bf-container .bf-footer {
+  background-color: #6F9ABF;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bf-container .bf-head p {
+  color: #fff;
+}
+.bf-container .bf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding: 20px 16px;
+  background-color: #1d2228;
+}
+.bf-container .bf-body {
+  width: 500px;
+  background-color: #B0C1D9;
+}
+
+/*
+h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+p{
+    color: #fff;
+}
+
+input, textarea, select{
+    width: 100%;
+    background-color: #141824;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: 'Baloo 2', cursive;
+    margin-top: 5px;
+    resize: none;
+    color: #fff;
+    border-radius: 10px;
+}
+.bf-body-box{
+    padding: 20px;
+}
+.bf-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.bf-col-12{
+    width: 100%;
+}
+
+.bf-col-3{
+    width: 30%;
+}
+
+.bf-col-6{
+    width: 48%;
+}
+
+.bf-head{
+    text-align: center;
+}
+
+.bf-head, .bf-footer{
+    background-color: #141824;
+    padding: 20px 10px;
+}
+.bf-head p{
+    color: #115035;
+}
+.bf-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 20px 16px;
+    background-color: #1d2228;
+}
+
+.bf-body{
+    width: 500px;
+    background-color: #1d1d2c;
+}
+
+*/
 @keyframes textAlpha {
   from {
     opacity: 0;
@@ -413,7 +537,8 @@ i {
   .mainFooter div {
     margin-bottom: 1rem;
   }
-  .formContacto, .formleft__caja {
+  .formContacto,
+.formleft__caja {
     width: 100%;
   }
   .btn {
@@ -430,6 +555,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 100px;
   }
   .botonHeader .mainButton {
     display: flex;
@@ -440,12 +566,60 @@ i {
   .display-1 {
     text-align: center;
   }
-  .us h2, .col-md h2 {
+  .us h2,
+.col-md h2 {
     text-align: center;
     padding: 10px 0;
   }
-  .lead, .lead2 {
+  .lead {
+    text-decoration: none;
+  }
+  .lead2 {
     text-align: center;
+  }
+  .p-5 .containerNosotros .mainSection .aboutUs .text2 {
+    text-align: center;
+  }
+  .p-5 .containerNosotros .mainSection .aboutUs .lead a {
+    text-decoration: none;
+  }
+  footer .leftFooter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .bottomColFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .bf-row {
+    flex-direction: column;
+    padding: 0;
+  }
+  .bf-row .bf-col-3 {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .bf-col-12 {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .bf-col-6 {
+    padding: 10px 0;
+  }
+  .bf-container {
+    padding: 50px 16px;
+  }
+  .bf-container .bf-col-6 {
+    width: 100%;
   }
 }
 
