@@ -83,8 +83,7 @@
     <!--ends header carousel-->
 
 
-    <!--form-->
-    <main class="contactForm">
+    <!-- <main class="contactForm">
             <h1>Contacto</h1>
         <section class="formleft__caja">
             <form action="envio.php" class="formContacto">
@@ -147,8 +146,71 @@
             </form>
 
         </section>
-        <!--Ends Form-->
-    </main>
+
+    </main> -->
+
+        <!-- This is main Form Area Start ++ -->
+        <div class="bf-container">
+
+            <!-- Main form Body Start -->
+            <div class="bf-body">
+                <div class="bf-head">
+                    <h1>Conecta con Nosotros</h1>
+                    <p>Sacate tus dudas y reserva cuanto antes!</p>
+                </div>
+                  
+                <form class="bf-body-box" action="form.php">
+                    <div class="bf-row">
+                        <div class="bf-col-6">
+                            <p>Tu nombre</p>
+                            <input type="text" name="fname" id="fname" placeholder="Tu nombre">
+                        </div>
+                        <div class="bf-col-6">
+                            <p>E-mail</p>
+                            <input type="email" name="email" id="email" placeholder="Tu email">
+                        </div>
+                    </div>
+                    <div class="bf-row">
+                        <div class="bf-col-6">
+                            <p>Selecciona tu fecha</p>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="bf-col-6">
+                            <p>¿Cuantas personas viajan?</p>
+                            <select name="s-select">
+                                <option>Seleciona el numero</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="bf-row">
+                        <div class="bf-col-12">
+                            <p>Mensaje</p>
+                            <textarea name="Messages" id="Messages" cols="10" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="bf-row">
+                        <div class="bf-col-3">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+    
+                </form>
+                
+                <!-- Footer Form Start -->
+                <div class="bf-footer">
+                    <p>Nordic Airlines </p>
+                </div>
+                <!-- Footer Form End -->
+    
+            </div>
+            <!-- Main form Body End -->
+    
+        </div>
+        <!-- This is main Form Area  End -->
 
     <!--Preguntas Accordion-->
     <section id="questions">
@@ -161,28 +223,32 @@
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            ¿Lorem ipsum dolor sit amet?
+                            Información sobre el Coronavirus.
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                            body.</div>
+                        <div class="accordion-body">Tenemos algunos protocolos de seguridad y normas sanitarias para viajar. Presentar el certificado de esquema de vacunacion completo (esto es sumamente importante para entrar a todos los paises escandinavos, sin el mismo no podra viajar con nosotros). Se les asignara barbijos a todos los asientos.
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            ¿Lorem ipsum dolor sit amet?
+                            Equipaje y check in.
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.</div>
+                        <div class="accordion-body">Para seleccionar los asientos, debes acceder directamente al sitio web de la aerolínea de tu vuelo. También puedes elegir el asiento en el momento del check-in.
+                            <hr>
+                            <p>Importante:</p>
+                            <ul>
+                                <li>Ten en cuenta que algunas aerolíneas no permiten que selecciones los asientos gratis antes del check-in, solo con el pago de una tasa con anticipación y que, en algunos casos, tienes que gestionarlo directamente con ellos.</li>
+                                <li>Si pre-seleccionas el asiento de tu vuelo, la aerolínea puede cambiarlo sin previo aviso.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -190,16 +256,19 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                            ¿Lorem ipsum dolor sit amet?
+                            Cambios y cancelaciones.
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                            body. Nothing more exciting happening here in terms of content, but just filling up the
-                            space to make it look, at least at first glance, a bit more representative of how this would
-                            look in a real-world application.</div>
+                        <div class="accordion-body">En el caso que necesites cambiar tu vuelo o cancelarlo, en la seccion de contacto vas a poder dejarnos tu consulta e informarnos detalladamente sobre ello.
+                            <hr>
+                            <ul>
+                                <li>En algunos casos puedes corregir el nombre, apellido, número de documento y la fecha de nacimiento de los viajeros.</li>
+                                <li>Dependiendo del proveedor, podrás cambiar el nombre y apellido si afecta a 2 letras aproximadamente, y si no modifca el género del viajero. Este cambio tiene un costo adicional.</li>
+                                <li>Te pediremos una copia del documento con el que vas a viajar.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,51 +276,27 @@
         </div>
     </section>
 
-    <!--footer-->
-    <div class="container pt-2">
+     <!--footer-->
+     <div class="container pt-2">
         <footer class="py-5">
-            <div class="row">
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+            <div class="row d-flex justify-content-between w-100">
+                <div class="col-6 col-md-2 mb-3 leftFooter">
+                    <h5>Nosotros</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="/pages/contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+                        <li class="nav-item mb-2"><a href="/pages/paquetes.html" class="nav-link p-0 text-muted">Reservá</a></li>
+                        <li class="nav-item mb-2"><a href="/pages/contacto.html" class="nav-link p-0 text-muted">FAQs</a></li>
                     </ul>
                 </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-5 offset-md-1 mb-3">
+                <div class="col-md-5 offset-md-1 mb-3 bottomColFooter">
                     <form>
                         <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <p>Una vez por mes te vamos a mandar nuestras mejores ofertas!</p>
+                        <div class="d-flex flex-column flex-sm-column w-100 gap-2 rightFooter">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Direccion de Email">
+                            <button class="btn btn-primary" type="button">Suscribite</button>
                         </div>
                     </form>
                 </div>
